@@ -15,11 +15,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    /* background-color: #004c9b; */
 }
 
 .header {
     background: #0071dc;
-    color: white;
+    /* background-color: black; */
+    color: blue;
     padding: 20px 0;
     text-align: center;
     margin-bottom: 30px;
