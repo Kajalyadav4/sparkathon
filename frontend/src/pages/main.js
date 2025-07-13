@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 
 export default function Main() {
   const products = [
-    { id: 1, name: "Floral Sundress", price: "$89.99", emoji: "👗" },
-    { id: 2, name: "Chunky White Sneakers", price: "$129.99", emoji: "👟" },
-    { id: 3, name: "High-Waisted Jeans", price: "$79.99", emoji: "👖" },
-    { id: 4, name: "Cotton T-Shirt", price: "$39.99", emoji: "👕" },
-    { id: 5, name: "Silk Blouse", price: "$159.99", emoji: "👚" },
-    { id: 6, name: "Denim Jacket", price: "$99.99", emoji: "🧥" },
+    { id: 1, name: "Floral Sundress", price: "₹1129", emoji: "👗" },
+    { id: 2, name: "Chunky White Sneakers", price: "₹5999", emoji: "👟" },
+    { id: 3, name: "High-Waisted Jeans", price: "₹659", emoji: "👖" },
+    { id: 4, name: "Cotton T-Shirt", price: "₹399", emoji: "👕" },
+    { id: 5, name: "Silk Blouse", price: "₹399", emoji: "👚" },
+    { id: 6, name: "Denim Jacket", price: "₹1999", emoji: "🧥" },
   ];
 
   // Placeholder click handler (to implement later)
@@ -40,7 +40,7 @@ const navigate = useNavigate();
         <div className="container">
           <div className="hero-content">
             <h1>Welcome to NeoCart</h1>
-            <p>Find your style. Fast. Smart. Voice-Enabled.</p>
+            <p>New-Era Shopping experience with Voice, Vision & AI</p>
           </div>
         </div>
       </section>

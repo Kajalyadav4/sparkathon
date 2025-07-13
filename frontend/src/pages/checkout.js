@@ -28,7 +28,7 @@ function Checkout() {
         if (command.includes("checkout") || command.includes("place") || command.includes("order")) {
           setCurrentStep("review");
           setShowReview(true);
-          speak("Your order total is ₹4,247.76. Say confirm to place your order.");
+          speak("Your order total is ₹3678. Say confirm to place your order.");
         } else {
           setErrorMsg("Say 'checkout my cart' or 'place my order' to begin");
           setShowError(true);
@@ -138,9 +138,9 @@ const sendToBackend = async (command) => {
     <div className="container">
       <div className="header">
         <h1>
-          <i className="fas fa-microphone"></i> VoiceKey
+          <i className="fas fa-microphone"></i> NeoCart
         </h1>
-        <p>Voice-Powered Checkout Experience</p>
+        <p>New-Era Shopping experience with Voice, Vision & AI</p>
       </div>
 
       <div className="main-content">
@@ -150,34 +150,28 @@ const sendToBackend = async (command) => {
     <i className="fas fa-shopping-cart"></i> Your Cart
   </h2>
 
+  
+
   <div className="cart-item">
     <div className="item-info">
-      <div className="item-name">Basic White T-Shirt</div>
-      <div className="item-details">Cotton, Unisex, Size M</div>
+      <div className="item-name">Floral SunDress</div>
+      <div className="item-details">Silk, M</div>
     </div>
-    <div className="item-price">₹499.00</div>
+    <div className="item-price">₹1129</div>
   </div>
 
   <div className="cart-item">
     <div className="item-info">
-      <div className="item-name">White Sneakers</div>
-      <div className="item-details">Chunky sole, Size 6</div>
+      <div className="item-name">Block Heel Sandals</div>
+      <div className="item-details">Open Toe, Size 6</div>
     </div>
-    <div className="item-price">₹1,799.00</div>
-  </div>
-
-  <div className="cart-item">
-    <div className="item-info">
-      <div className="item-name">High-Waisted Blue Jeans</div>
-      <div className="item-details">Slim Fit, Size 28</div>
-    </div>
-    <div className="item-price">₹1,599.00</div>
+    <div className="item-price">₹2549</div>
   </div>
 
   <div className="cart-total">
-    <div>Subtotal: ₹3,897.00</div>
-    <div>Tax: ₹350.76</div>
-    <div className="total-amount">Total: ₹4,247.76</div>
+    <div>Subtotal: ₹3678</div>
+    <div>Tax: ₹350</div>
+    <div className="total-amount">Total: ₹4028</div>
   </div>
 </div>
 

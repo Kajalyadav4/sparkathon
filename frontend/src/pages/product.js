@@ -14,7 +14,7 @@ export default function Product() {
       sender: "assistant",
     },
     {
-      text: "I need an elegant dress for a summer wedding",
+      text: "I need an elegant dress for summer",
       sender: "user",
     },
     {
@@ -26,12 +26,12 @@ export default function Product() {
   const [selectedSize, setSelectedSize] = useState("M");
   const [viewMode, setViewMode] = useState("3d");
   const [cartCount, setCartCount] = useState(1);
-  const [cartTotal, setCartTotal] = useState(89);
+  const [cartTotal, setCartTotal] = useState(2549);
 
   const product = {
-    title: "Elegant Floral Midi Dress",
-    price: 89,
-    original: 129,
+    title: "Elegant Floral SunDress",
+    price: 1129,
+    original: 3999,
     emoji: "👗",
   };
 
@@ -39,14 +39,14 @@ export default function Product() {
     {
       key: "shoes",
       title: "Block Heel Sandals",
-      price: 65,
-      reason: "Perfect match for midi dresses",
+      price: 2549,
+      reason: "Perfect match for elegant dresses",
       icon: "👠",
     },
     {
       key: "clutch",
       title: "Beaded Evening Clutch",
-      price: 39,
+      price: 5999,
       reason: "Complements floral patterns beautifully",
       icon: "👜",
     },
@@ -105,8 +105,8 @@ export default function Product() {
       <header className="header">
         <div className="container header-content">
           <div className="logo">
-            <div className="logo-icon">{product.emoji}</div>
-            VoiceCommerce Pro
+            
+            NeoCart
           </div>
           <div className="header-info">
             <div className="user-context">
@@ -122,9 +122,9 @@ export default function Product() {
         {/* Left Sidebar */}
         <aside className="sidebar">
           <div className="sidebar-header">
-            <div className="sidebar-title">AI Style Assistant</div>
+            <div className="sidebar-title">Voice Assistant</div>
             <div className="sidebar-subtitle">
-              Voice-activated fashion discovery
+              Your intelligent voice companion
             </div>
           </div>
           <div className="voice-interface">
@@ -155,7 +155,7 @@ export default function Product() {
           <div className="product-header">
             <h2 className="product-title">{product.title}</h2>
             <p className="product-category">
-              Summer Collection • Wedding Guest Attire
+              Summer Collection • Floral
             </p>
           </div>
           <div className="product-viewer">
@@ -204,8 +204,8 @@ export default function Product() {
 
             <div className="pricing-section">
               <div className="price-display">
-                <span className="current-price">${product.price}</span>
-                <span className="original-price">${product.original}</span>
+                <span className="current-price">₹{product.price}</span>
+                <span className="original-price">₹{product.original}</span>
                 <span className="discount-badge">30% OFF</span>
               </div>
               <div className="pricing-info">
@@ -246,7 +246,7 @@ export default function Product() {
             >
               <div className="rec-header">
                 <div className="rec-title">{item.title}</div>
-                <div className="rec-price">${item.price}</div>
+                <div className="rec-price">₹{item.price}</div>
               </div>
               <div className="rec-reason">{item.reason}</div>
               <div className="rec-score">
@@ -263,11 +263,11 @@ export default function Product() {
           <div className="cart-title">Shopping Cart</div>
           <div className="cart-count">{cartCount}</div>
         </div>
-        <div className="cart-total">${cartTotal}.00</div>
+        <div className="cart-total">₹{cartTotal}.00</div>
         <div className="cart-actions">
-          <button className="btn btn-secondary">Review</button>
+          <button className="btn btn-secondary">Buy Now</button>
           <button className="btn btn-primary" onClick={() => navigate("/checkout")}>
-  Checkout
+  Go to Cart
 </button>
 
         </div>
